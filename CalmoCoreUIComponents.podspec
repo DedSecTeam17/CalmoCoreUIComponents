@@ -9,4 +9,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.0'
   s.swift_version = '5.9'
   s.source_files = 'Sources/CalmoCoreUIComponents/**/*'
+  s.resources = "CalmoCoreUIComponents/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf}"
+
 end
