@@ -49,7 +49,7 @@ struct DarkColorPlate : ColorPlate{
 }
 
 
-struct Theme {
+public struct Theme {
     let primaryColor: Color
     let backgroundColor : Color
     let secondaryColor: Color
@@ -59,7 +59,7 @@ struct Theme {
 }
 
 
-let lightTheme = Theme(
+public let lightTheme = Theme(
     primaryColor: Color(hex: "#fe6601"),
     backgroundColor : Color(hex: "#EFF3F5"),
     secondaryColor: .black,
@@ -68,7 +68,7 @@ let lightTheme = Theme(
 
 
 
-let darkTheme = Theme(
+public let darkTheme = Theme(
     primaryColor: Color(hex: "#4030FF"),
     backgroundColor : Color(hex: "#EFF3F5"),
     secondaryColor: .black,
@@ -77,8 +77,8 @@ let darkTheme = Theme(
 )
 
 
-struct ThemeKey: EnvironmentKey {
-    static let defaultValue: Theme = darkTheme  // Default theme
+public struct ThemeKey: EnvironmentKey {
+    public static let defaultValue: Theme = darkTheme  // Default theme
 }
 
 extension EnvironmentValues {
