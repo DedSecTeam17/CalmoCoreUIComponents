@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CalmoCoreUIComponents'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'CORE UI for CalmoCoreUIComponents'
   s.homepage         = 'https://github.com/DedSecTeam17/CalmoCoreUIComponents'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
