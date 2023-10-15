@@ -23,6 +23,8 @@ public class CalmoTextViewModel : ObservableObject {
 public struct CalmoText: View {
 //    let packageBundle = Bundle.module // "module" is auto-generated for Swift packages with resources
     
+
+    
     
     @ObservedObject  var viewModel : CalmoTextViewModel
     public init(viewModel: CalmoTextViewModel) {
@@ -32,10 +34,11 @@ public struct CalmoText: View {
     
     public var body: some View {
         Text(viewModel.text)
-            .font(viewModel.varient.front)
+            .font(viewModel.varient.font)
     }
 }
 
 #Preview {
     CalmoText(viewModel: .init(text: "Hello There", varient: .largeTitle))
+        
 }
