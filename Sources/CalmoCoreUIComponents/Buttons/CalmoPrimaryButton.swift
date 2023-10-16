@@ -12,7 +12,7 @@ public struct CalmoPrimaryButton: View {
     var size:CGSize = .init(width: 0.0, height: 0.0)
     var onTap:()->Void
     
-    init(text: String, size: CGSize = .init(width: 0.0, height: 0.0), onTap: @escaping () -> Void) {
+    public init(text: String, size: CGSize = .init(width: 0.0, height: 0.0), onTap: @escaping () -> Void) {
         self.text = text
         self.size = size
         self.onTap = onTap
